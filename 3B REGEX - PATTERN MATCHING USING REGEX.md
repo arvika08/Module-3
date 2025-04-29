@@ -1,12 +1,9 @@
 # Exp.No:3b  
 ## REGEX - PATTERN MATCHING USING REGEX
 
----
 
 ### AIM  
 To write a Python program that matches a string containing an `'a'` followed by **two to three `'b'` characters** using regular expressions.
-
----
 
 ### ALGORITHM
 
@@ -18,12 +15,23 @@ To write a Python program that matches a string containing an `'a'` followed by 
 6. If no match is found, print `"Not matched!"`.  
 7. Terminate the program.
 
----
 
 ### PROGRAM
 
-```
-```
+import re
+
+s = input()
+
+if re.fullmatch(r'ab*', s):
+
+    print("Found a match!")
+else:
+
+    print("Not matched!")
+
 ### OUTPUT
+![image](https://github.com/user-attachments/assets/fa68ca10-e09e-40e7-9802-a4facde57af8)
+
 
 ### RESULT
+Thus, Python program that matches a string containing an `'a'` followed by **two to three `'b'` characters** using regular expressions was implemented successfully. 
